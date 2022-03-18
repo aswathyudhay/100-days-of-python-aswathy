@@ -1,0 +1,60 @@
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+a=input("\nYou are jolted awake. You open your eyes and find yourself lying on a small boat that has just hit shore on a mysterious island. You have no idea how you got here. \nYou see an empty knapsack and two boxes near you in the boat labelled A and B. Which one do you pick?\n")
+
+if a.lower()=="a":
+  print("Argh! A venomous snake reared its head from inside the box and bit you! Game over.\n")
+elif a.lower()=="b":
+  print("You find a dagger, a rope and a first aid kit in the box. You put the contents into the knapsack and venture into the island.\n")
+  
+  m=input("You wander into a forest and walk until you arrive at a crossroad. Where do you want to go? Right or left?\n")
+
+  if m.lower()=='left':
+    print("Yikes! You got stuck in quicksand. Game over.")
+  elif m.lower()=='right':
+    q= input("\nAs you are walking in the pathway, you catch sight of a tiger running towards you. There is a tree near you and you have your dagger in your knapsack.\n What will you do? Type A to climb the tree and B to confront the tiger with the dagger.")
+    if q.lower()=='b':
+      print("\nThe tiger sees you wield your dagger and pounces on you, going for your jugular. Game over.")
+    elif q.lower()=='a':
+      r=input("\nYou quickly climb up the tree. The tiger circles the tree for a few minutes trying to find a way to climb it but it cannot. You breathe a sigh of relief and see a wasp nest on the branch above your head. Do you: \nA. stay on the branch, give the wasp nest a wide berth and wait for the tiger to leave, \nB. cut down the wasp nest and drop it on the tiger, \nC. jump to an adjoining tree to distance yourself from the nest.\nPick A, B or C.")
+      if r.lower()=="a":
+        print("\nOops, you waited too long and a deadly tree spider bites you. Game over.")
+      elif r.lower()=="c":
+        print("\nOh no! You fell while jumping from the tree and broke your leg. The tiger is closing in on you. Game over.")
+      elif r.lower()=="b":
+        print("\nSmart! The wasp net falls on the tiger and it runs away, chased by angry wasps. You climb down from the tree and continue on your journey.")
+        e= input("\nYou come across a beautiful woman sleeping on a rock near a lake. Do you: \nA. wake her up for a chat, what can go wrong?, or \nB. follow your policy of not talking to strangers and mind your business. \nPick A or B.")
+        if e.lower()=="a":
+          print("\nTough luck. The woman was a cannibal and didn't appreciate being woken up. Game over.")
+        elif e.lower()=="b":
+          print("\nYou begin wading across the lake. Your legs brush up against an object at the bottom of the lake.")
+          f=input("\nDo you: A. Check what the object is? \nB. Swim as quickly as you can. It feels like something dangerous? Pick A or B.")
+
+          if f.lower()=="a":
+            print("\nIt/'s a golden lamp! You find out that the bed of the lake is filled with precious items. Looks like you found the treasure!")
+
+          elif f.lower()=="b":
+            print("\nOh no, you missed the chance of a lifetime because of fear! What a shame. Game over.")
